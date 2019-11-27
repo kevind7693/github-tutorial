@@ -11,7 +11,10 @@ __Github__: Is a cloud based service that allows you to "push" your git reposito
 
 ---
 ## Initial Setup
-
+Steps to make your own github account:
+1. Go to this [link](github.com)
+2. Click sign up
+3. Follow the directions
 
 
 ---
