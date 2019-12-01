@@ -28,6 +28,27 @@ Steps to steup your IDE:
 
 ---
 ## Repository Setup
+Steps for setting up your first repository on your ide (local):
+1. `cd` into the directory you wish to make into a repository 
+2. Once in the directory, type in `git init`
+3. If successful you said see next to the folders name on the command line `(master)` 
+4. If haven't, create a file using `touch "file name"`
+5. `c9` into th file 
+6. Make some edits in that file
+7. After you're finished, do `git add "file name"`
+8. After you do `git add`, you do `git commit -m "your message"`
+9. Lastly you do `git push` to send all your commits to your remote repo (github)
+
+
+Steps for setting up your remote repository on github and connecting it to your local:
+1. Login to your github account 
+2. Click on the `+` icon near the top right of the site then click on "New repository"
+3. Type in your new repository's name (**Make sure your new repository's name is excatly the same as the  repository on your local ide, the repo that you want push to and pull from**)
+4. **Make sure your link is in the SSH key** 
+5. After that, login to your local ide
+6. `cd` into the repo you just created on the local (same name)
+7. Type in `git remote add origin git@github.com:"Your github account name"/"Your repository name".git`
+8. Lastly type in `git push -u origin master`
 
 
 
