@@ -93,6 +93,10 @@ What ongoing workflow looks like on git:
 
 **Undoing a `git add`** : Use `git reset HEAD <file name>` to undo any "adding" to the stage 
 
-**Undoing a `git commit`** : Use `git reset HEAD^` to remove the last commit you just committed 
+**Undoing a `git commit`** : Use `git reset --soft HEAD~1` to remove the last commit you just committed 
 
-**Undoing a `git push`** :  Use `git push -f origin HEAD^:master` to undo the last push you just made 
+**Undoing a `git push`** :
+1. Use `git log` to get the "sha" of the commit you want to revert back to
+2. Use `git revert <sha>` to get the form of your work that you want back
+3. Use `git reset --hard` to match your local ide with the commit you just reverted back to 
+4. Use `git push origin +master` to push the commit that you just reverted back to from your local to your remote
