@@ -91,9 +91,10 @@ What ongoing workflow looks like on git:
 ## Rolling Back Changes
 **Undoing an edit** : Use `git checkout --<filename>` to undo any edits since your last commit  
 
-**Undoing a `git add`** : Use `git reset HEAD <file name>` to undo any "adding" to the stage 
+**Undoing a `git add`** : Use `git reset HEAD <file name>` to undo any "adding" to the stage  
 
-**Undoing a `git commit`** : Use `git reset --soft HEAD~1` to remove the last commit you just committed 
+**Undoing a `git commit`** : Use `git reset --soft HEAD~1` to remove the last commit you just committed  
+If you want to undo the last commit and the add you can do `git reset --hard HEAD~1`
 
 **Undoing a `git push`** :
 1. Use `git log` to get the "sha" of the commit you want to revert back to
