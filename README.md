@@ -90,7 +90,7 @@ What ongoing workflow looks like on git:
 
 ---
 ## Rolling Back Changes
-**Undoing an edit** : Use `git checkout --<filename>` to undo any edits since your last commit  
+**Undoing an edit** : Use `git checkout -- <filename>` to undo any edits since your last commit  
 
 **Undoing a `git add`** : Use `git reset HEAD <file name>` to undo any "adding" to the stage  
 
