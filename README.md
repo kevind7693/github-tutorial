@@ -4,7 +4,7 @@ _by Kevin Dong_
 
 
 ## Git vs. GitHub
-__Git__: Is a version control system that allows you to manage and keep track of your code and edits. Git is on local(doesn't need internet unless if done on an ide). **Can work without github.**   
+__Git__: Is a version control system that allows you to manage and keep track of your code and edits. Git runs on local (doesn't need internet access unless you're using an ide). **Can work without github.**   
 
   
 __Github__: Is a cloud based service that allows you to "push" your git repositories onto it. It also allows collaboration between 2 or more users on a single project. **Relies on git.**
