@@ -4,7 +4,7 @@ _by Kevin Dong_
 
 
 ## Git vs. GitHub
-__Git__: Is a version control system that allows you to manage and keep track of your code and edits. Git is on local(doesn't need internet unless if done on an ide). **Can work without github.**   
+__Git__: Is a version control system that allows you to manage and keep track of your code and edits. Git runs on local (doesn't need internet access unless you're using an ide). **Can work without github.**   
 
   
 __Github__: Is a cloud based service that allows you to "push" your git repositories onto it. It also allows collaboration between 2 or more users on a single project. **Relies on git.**
@@ -59,9 +59,9 @@ Steps for setting up your remote repository on github and connecting it to your 
 ## Workflow & Commands
 **Commands To Know For Your Workflow**:
 * `git init`: turns a directory into a repository. (like hiring a photographer to help take pictures of you)
-* `git add <file name>` : adds your most recant edits onto the "stage" so that its ready for commiting. (you moving around and changing in order to get the best picture for the photographer to take)
+* `git add <file name>` : adds your most recent edits onto the "stage" so that it's ready for commiting. (you moving around and changing your position, in order to get the best picture for the photographer to take)
     * `git add .` : adds all the edits of all the files you've worked in that certain dircetory/repo onto the stage for commiting
-* `git commit -m <your message>` : takes a screenshot of what you just added onto the stage. (Saving your most recant edits/photographer taking the picture) **Don't write your commit messages in the past tense and make it short and concise.**
+* `git commit -m "<your message>"` : takes a screenshot of what you just added onto the stage. (Saving your most recant edits/photographer taking the picture) **Don't write your commit messages in the past tense and make it short and concise.**
 * `git status` : gives you an overview of your most recant edits.
     * Red message = edits haven't been added onto the stage (not ready for commiting)
     * Green message = edits are ready for commiting 
@@ -71,8 +71,8 @@ Steps for setting up your remote repository on github and connecting it to your 
 * `cd <folder name>` : moves into that particular folder
     * `cd ..` : goes up one level (Goes to the parent directory of the directory you are currently in)
     * `cd ~` : goes to the root directory (The highest directory or the directory of all directories)
-* `touch <files name>.txt` : creates a file 
-* `c9 <files name>` : moves into that particular file  
+* `touch <file name>.txt` : creates a file 
+* `c9 <file name>` : moves into that particular file  
  
 
 
@@ -81,7 +81,7 @@ What ongoing workflow looks like on git:
 2. You `c9 <file name>` into the file you wish to work on.
 3. You make your edits and changes on the file 
 4. You `git add <file name>` so that its ready for commiting 
-5. You `git commit -m <your message>`
+5. You `git commit -m "<your message>"`
 6. You `git push` your commits onto your remote repo (usually github)
 7. Repeat from step 3 until you're finished 
 
@@ -90,7 +90,7 @@ What ongoing workflow looks like on git:
 
 ---
 ## Rolling Back Changes
-**Undoing an edit** : Use `git checkout --<filename>` to undo any edits since your last commit  
+**Undoing an edit** : Use `git checkout -- <filename>` to undo any edits since your last commit  
 
 **Undoing a `git add`** : Use `git reset HEAD <file name>` to undo any "adding" to the stage  
 
